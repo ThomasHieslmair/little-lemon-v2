@@ -1,5 +1,5 @@
 import React from "react"
-import small_logo from "../images/Logo .svg"
+import small_logo from "../images/logo_white.png"
 
 const Footer = () => {
     return(
@@ -7,10 +7,10 @@ const Footer = () => {
             <section>
             <div className="company-info">
                 <img src={small_logo} alt=""/>
-                <p>We are a family owned Mediterraneran restaurant, focused on traditional recipes servred with a modern twist.</p>
+                <p>Family owned Mediterraneran restaurant, traditional recipes served with a modern twist and fresh ingredients.</p>
             </div>
             <div>
-                <h3>Important Links</h3>
+                <h3>More</h3>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/">About</a></li>
@@ -23,13 +23,13 @@ const Footer = () => {
             <div>
                 <h3>Contact</h3>
             <ul>
-            <li>Address: <br/> 123 Town Street, Chicago</li>
+            <li>Address: <br/>Chicago, Illinois, USA</li>
                 <li>Phone: <br/> +00 123 456 789</li>
-                <li>Email: <br/> little@lemon.com</li>
+                <li>Email: <br/> hello@littlelemon.com</li>
             </ul>
             </div>
             <div>
-                <h3>Social Media Links</h3>
+                <h3>Find us on</h3>
             <ul>
                 <li><a href="/">Facebook</a></li>
                 <li><a href="/">Instagram</a></li>

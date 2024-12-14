@@ -9,6 +9,8 @@ const BookingForm = (props) => {
    const [guests, setGuests] = useState("");
    const [date, setDate] = useState("");
    const [times, setTimes] = useState("")
+   const [name, setName] = useState("")
+
 
    const handleSumbit = (e) => {
    e.preventDefault();
@@ -25,6 +27,16 @@ const BookingForm = (props) => {
       <section>
         <form onSubmit={handleSumbit}>
           <fieldset className="formField">
+            <div>
+              <label htmlFor="book-name">Your Name:</label>
+              <input
+              id="book-name" type="text"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Enter your full name"
+              />
+              </div>
             <div>
               <label htmlFor="book-date">Choose Date:</label>
               <input id="book-date" value={date} onChange={(e) => handleChange(e.target.value)} type="date" required/>

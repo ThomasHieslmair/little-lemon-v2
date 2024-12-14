@@ -157,7 +157,7 @@ input, label{
 }
 
 .comfirm span{
-  color: blue;
+  color: rgb(0, 0, 0);
 }
 
 
@@ -222,6 +222,7 @@ footer section{
   display: flex;
   justify-content: space-between;
   align-items: start;
+  background-color: #495e57;
 }
 
 .company-info img{
@@ -232,19 +233,46 @@ footer section{
 
 .company-info p{
   width: 320px;
+  color: rgb(255, 255, 255);
 }
 
 footer h3{
   font-size: 18px;
+  color: rgb(255, 255, 255);
 }
 
 footer ul{
   padding: 0;
+  color: rgb(255, 255, 255);
 }
 
 footer ul li{
   padding: 8px 0;
+  color: rgb(255, 255, 255);
 }
+
+/* Für normale Links (nicht besucht und nicht aktiv) */
+footer a {
+  color: inherit; /* Erbt die Textfarbe vom übergeordneten Element */
+  text-decoration: none; /* Entfernt die Unterstreichung */
+}
+
+/* Für besuchte Links (die Links, die der Benutzer bereits besucht hat) */
+footer a:visited {
+  color: inherit; /* Setzt die Farbe der besuchten Links auf die gleiche wie für normale Links */
+}
+
+/* Für Links, die beim Hover (drüberfahren mit der Maus) aktiviert sind */
+footer a:hover {
+  color: #F4CE14; /* Eine beliebige Farbe, wenn der Benutzer mit der Maus darüber fährt */
+  text-decoration: underline; /* Optional: fügt eine Unterstreichung beim Hover hinzu */
+}
+
+/* Für Links, die gerade aktiv sind (z.B. beim Klicken) */
+footer a:active {
+  color: #F4CE14; /* Eine andere Farbe während des Klickens */
+}
+
 
 
 @media screen and (max-width: 768px){
@@ -305,6 +333,7 @@ footer ul li{
   }
   .company-info p{
     width: 100%;
+    color: rgb(255, 255, 255);
   }
 }
 

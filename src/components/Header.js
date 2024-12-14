@@ -11,10 +11,10 @@ const Header = () => {
           <h3>Chicago</h3>
           <p>
             We are a family owned Mediterraneran restaurant, focused on
-            traditional recipes servred with a modern twist.
+            traditional recipes served with a modern twist and fresh ingredients from local farmers.
           </p>
           <Link to="/booking">
-            <button aria-label="On Click">Reserve Table</button>
+            <button aria-label="On Click">Book a Table</button>
           </Link>
         </div>
         <div className="banner-img">
